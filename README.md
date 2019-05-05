@@ -29,24 +29,28 @@ Please refer the url : https://www.clock.co.uk/insight/deleting-a-git-commit
 
 #### Ansible setup and process to run and test the roles
 
-- Create a directory as ansible workstation
-- I will use a script to intall ansible 
+- Create a directory as _ansible workstation_
+- I will use a script to intall ansible
 
-```Script for ansible installation
+```
+Script for ansible installation
 ```
 
 - Once the installation is done you need to check the version of ansible
 - Make sure you copy all your roles and playbooks under the ansible-wrokstation directory
 - create a file called dev under the same directory
-- Add the hostname in that file : hostname - host that you want to run over your ansible role
-- Make sure you copy your pub key to the host before apllying the role
+- Add the _hostname_ in that file : hostname - host that you want to run over your ansible role
+- Make sure you copy your _pub key_ to the host before apllying the role
 - we need to test that connection is established or not
 - you can use this ping command to test the host connection
 
 #### Running the ansible playbook 
 
-- cd ansible-workstation
-- ansible playbook -l hostname path_to_playbook
+```
+ansible ping command
+cd ansible-workstation
+ansible playbook -l hostname path_to_playbook
+```
 
 ## Terraform
 
